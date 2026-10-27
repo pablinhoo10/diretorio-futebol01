@@ -1,9 +1,9 @@
 export async function carregarEstadosBrasilAPI() {
   const selectEstado = document.getElementById('estado');
   try {
-    console.log("Buscando estados na API do IBGE...");
+    console.log("Buscando estados na API oficial do IBGE...");
     
-    // Usando a API de localidades do IBGE (100% gratuita, pública e sem bloqueio de CORS)
+    // API oficial do IBGE (100% gratuita, pública e sem bloqueio de CORS)
     const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados');
     
     if (!response.ok) {
