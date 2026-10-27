@@ -1,17 +1,18 @@
 // Importações usando a CDN oficial do Firebase (ES Modules)
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Substitua com as credenciais do seu projeto no console do Firebase
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_PROJECT_ID.firebaseapp.com",
-  projectId: "SEU_PROJECT_ID",
-  storageBucket: "SEU_PROJECT_ID.appspot.com",
-  messagingSenderId: "SUA_SENDER_ID",
-  appId: "SUA_APP_ID"
+  apiKey: "AIzaSyBcuDVc4H4wmd6yTGYmFIcY_snFlEGNBiE",
+  authDomain: "diretorio-futebol.firebaseapp.com",
+  projectId: "diretorio-futebol",
+  storageBucket: "diretorio-futebol.firebasestorage.app",
+  messagingSenderId: "904516567996",
+  appId: "1:904516567996:web:691adeb9569dcb70a1e1b9"
 };
 
-// Inicializa o Firebase e o Firestore
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
